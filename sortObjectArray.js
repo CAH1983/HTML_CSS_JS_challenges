@@ -11,12 +11,12 @@ const contactsData = [{ "id": 1, "first_name": "Evelin", "last_name": "Minchindo
 { "id": 10, "first_name": "Oliy", "last_name": "Goggin", "phone": "(704) 2164565" }];
 
 const sortData = (arr) => {
-  let sortedArr = [];
-  sortedArr = arr.sort((a, b) => {
+  arr = arr.sort((a, b) => {
     if (a.first_name < b.first_name) return -1;
     if (a.first_name > b.first_name) return 1;
     return 0;
   })
+  return arr;
 }
 
 console.log(sortData(contactsData));
